@@ -6,6 +6,19 @@ using System.Threading.Tasks;
 
 namespace _7_3
 {
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string publisher = "O\'Reilly";
+            Book one = new Book("Programming C# 3.0", "Jesse Liberty and Donald Xie", publisher, "9780596527433");
+            Book two = new Book("C# 3.0 In a Nutshell", "Joseph Albahari and Ben Albahari", publisher, "9780596527570");
+            Book three = new Book("C# 3.0 Cookbook", "Jay Hilyard and Stephen Teilhet", publisher, "9780596516109");
+            one.displayBook();
+            two.displayBook();
+            three.displayBook();
+        }
+    }
     class Book
     {
         private string title;
